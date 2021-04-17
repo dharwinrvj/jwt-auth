@@ -9,7 +9,10 @@ const tokenValidator = async (req, res, next) => {
         const jwttoken = req.cookies.jwttoken;
         const valid = await jwt.verify(jwttoken, process.env.SECRETKEY);
         if (valid) return next();
-        else res.render("login", { message: "Please Login !" });
+        else{
+            req.session.destroy();
+            res.render("login", { message: "Please Login !" });
+        }   
     }
     catch (err) {
         res.render("login", { message: "Please Login !" });
