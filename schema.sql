@@ -1,10 +1,10 @@
 /*
-database for express-auth-mysql
+database for nodejs-mysql-auth
 */
 --
--- database - nodelogin
+-- database - nodejsauth
 --
-CREATE DATABASE IF NOT EXISTS nodelogin;
+CREATE DATABASE IF NOT EXISTS nodejsauth;
 USE nodelogin;
 --
 -- table for users

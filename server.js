@@ -39,7 +39,7 @@ const db = mysql.createConnection({
   host: "localhost",  
   user: "root",
   password: "Localhost123@",
-  database: "nodelogin",
+  database: "nodejsauth",
   multipleStatements: true,
 });
 db.connect((err) => {
