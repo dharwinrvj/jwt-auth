@@ -1,7 +1,7 @@
 //imports
 const express = require("express");
 const router = express.Router();
-const token = require('../controllers/token');
+const token = require('../authenticators/token');
 //router
 //get profile
 router.get('/', token.tokenValidator, (req, res) => {

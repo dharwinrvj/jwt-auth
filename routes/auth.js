@@ -4,7 +4,7 @@ const router = express.Router();
 const mysql = require("mysql");
 const bcrypt = require("bcryptjs");
 const session = require('express-session');
-const token = require('../controllers/token');
+const token = require('../authenticators/token');
 //db
 const db = mysql.createConnection({
   host: "localhost",
