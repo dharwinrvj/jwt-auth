@@ -9,7 +9,7 @@ const token = require('../authenticators/token');
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Localhost123@",
+  password: "D123@localhost",
   database: "nodelogin",
   multipleStatements: true,
 });
